@@ -17,7 +17,9 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          Image.asset('assets/codelab.png'),
+          Image.network('https://www.izu.edu.tr/images/default-source/default-album/yeni-kampus-gisi.jpg',
+fit: BoxFit.contain ,//Bunun saysesinde genişlik her ekrana göre değişecektir.
+height: 250.0,)
           const SizedBox(height: 8),
           const IconAndDetail(Icons.calendar_today, 'October 30'),
           const IconAndDetail(Icons.location_city, 'İstanbul '),
